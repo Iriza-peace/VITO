@@ -1,2 +1,2 @@
-0 Sign
-1 No-sign
+0 sign
+1 no-sign

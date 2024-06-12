@@ -43,6 +43,10 @@ while True:
     # Listen to the keyboard for presses.
     keyboard_input = cv2.waitKey(1)
 
+    # # Draw a lines over our sign if there is sign
+    # if class_name[2:].lower() == "class 1" and confidence_score > 0.75:
+    #     cv2.putText(image, "Sign: OK", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+
     # 27 is the ASCII for the esc key on your keyboard.
     if keyboard_input == 27:
         break
