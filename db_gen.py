@@ -10,7 +10,7 @@ except sqlite3.Error as e:
 # Create a table to store face data if it doesn't exist
 try:
     c.execute('''CREATE TABLE IF NOT EXISTS cart
-                 (id INTEGER PRIMARY KEY AUTOINCREMENT, customer_uid TEXT, customer_name TEXT, createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP)''')
+                 (id INTEGER PRIMARY KEY AUTOINCREMENT, customer_uid TEXT, customer_name TEXT)''')
     #print("Table 'customers' created successfully")
 except sqlite3.Error as e:
     print("SQLite error:", e)
